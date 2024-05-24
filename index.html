@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 h-screen p-4 flex flex-col m-auto sm:w-3/4 items-center"
+  >
+    <h1 class="text-center font-bold text-3xl">Shopping Cart</h1>
+    <!--
+=================================
+  Start of Add item form section
+=================================
+-->
+    <section>
+      <h2 class="text-xl font-bold">Add Item for selection</h2>
+      <p
+        id="errorMessage"
+        class="w-full bg-red-400 my-2 text-white font-bold text-center"
+      ></p>
+      <form id="inputForm" class="flex gap-2 pb-2">
+        <div class="flex flex-col sm:flex-row gap-1">
+          <label class="font-semibold text-nowrap">Product Name:</label>
+          <input
+            id="productName"
+            required
+            type="text"
+            class="border border-black rounded-sm w-full"
+          />
+        </div>
+        <div class="flex flex-col sm:flex-row gap-1">
+          <label class="font-semibold">Price:</label>
+          <input
+            id="productPrice"
+            required
+            type="text"
+            class="border border-black rounded-sm w-full"
+          />
+        </div>
+        <div class="flex flex-col sm:flex-row gap-1">
+          <label class="font-semibold">Image:</label>
+          <input
+            id="productImage"
+            required
+            type="text"
+            class="border border-black rounded-sm w-full"
+          />
+        </div>
+        <button
+          class="bg-gray-100 border border-black rounded-sm px-2 hover:bg-gray-300 font-semibold sm:text-nowrap"
+        >
+          Create Product
+        </button>
+      </form>
+    </section>
+    <!--
+=================================
+    End of Add item form section
+=================================
+-->
+  </body>
+</html>
