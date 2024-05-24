@@ -178,4 +178,13 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     updateCart(displayedCart);
   }
+  calculateTotal.addEventListener("click", () => {
+    let totalPrice = 0.0;
+    displayedCart.forEach((product) => {
+      totalPrice = totalPrice + product.price;
+    });
+    displayTotal.className = "mt-4 font-bold text-2xl mb-6 text-left w-full";
+    displayTotal.innerText = "You have to pay: ฿" + totalPrice.toFixed(2);
+    displayTotal.scrollIntoView();
+  });
 });
